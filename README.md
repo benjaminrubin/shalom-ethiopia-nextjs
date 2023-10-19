@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shalom Ethiopia Website
 
-## Getting Started
+This website was created for Andy, a tour operator in Ethiopia.
 
-First, run the development server:
+In June 2018, my mother and aunt treated me to a special three week trip in Ethiopia as a gift for graduating college. Needless to say, the trip was surreal and humbling. Our private guide, Andy, and his driver took us all across the country and organized many intimate encounters with the native people. Andy and I bonded, and in the last week of the trip I asked him about his work. "So tell me... How do you source clients? Do you have a website or any digital presence?"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+At the time, he was working in conjunction with other agencies and sharing the profits while getting referrals mostly from past clients. He shared with me his dream to open up his own business one day and call it Shalom Ethiopia Tours, hoping to provide a better life for himself and his family. "How long would it take you to set everything up?" He spoke of two years, perhaps more. By the end of our trip, the country and its people left such a strong impression on me that I couldn't leave without giving something back. I decided to help him. "Let's stay in touch. I will build your digital presence".
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This website is the end result, which Andy used to market his services and collect booking requests.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Benjamin Rubin
