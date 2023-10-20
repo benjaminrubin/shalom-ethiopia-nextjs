@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import RequestBooking from "../navbar/request-booking";
+import Link from "next/link";
 
 type PropTypes = {
   imageUrl: string;
@@ -20,9 +22,16 @@ const Header = () => {
           priority
         />
       </header>
-      <h1 className='z-30 top-[50%] left-[50%] translate-x-[-50%] text-white text-center text-3xl md:text-5xl lg:text-6xl absolute w-full h-full font-bold'>
-        Discover the Wonders of Ethiopia
-      </h1>
+      <div className='z-30 top-[40%] md:top-[50%] left-[50%] translate-x-[-50%] text-white text-center  absolute w-full h-full font-bold'>
+        <h1 className='text-3xl md:text-5xl lg:text-6xl'>
+          Discover the Wonders of Ethiopia
+        </h1>
+        <div
+          className={`uppercase w-max mx-auto mt-4 md:mt-7 text-amber-400 hover:text-slate-900 hover:bg-amber-400 cursor-pointer transition duration-200 text-xs md:text-2xl font-bold py-2 px-3 border-4 border-amber-400 h-max opacity`}
+        >
+          <Link href='/request-booking'>Request Booking</Link>
+        </div>
+      </div>
     </div>
   );
 };

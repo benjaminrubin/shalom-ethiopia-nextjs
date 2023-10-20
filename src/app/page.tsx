@@ -1,9 +1,5 @@
-import Header from "@/components/header/header";
-import Logo from "@/components/logo/logo";
 import Ribbon from "@/components/ribbons/ribbon";
-import TriangleBlack from "@/components/ribbons/ribbon";
 import StackLink from "@/components/stack-link/stack-link";
-import Image from "next/image";
 
 export default function Home() {
   return (
