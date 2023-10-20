@@ -34,7 +34,7 @@ export default function Home() {
       <section className='bg-[#210915] mt-[-2px] mb-[-2px] -z-10'>
         <div className='container grid grid-cols-1 gap-10 md:gap-2 md:grid-cols-2 mx-auto py-10 px-4 md:px-12 lg:px-48 xl:px-80'>
           <div className=''>
-            <h2 className='uppercase text-2xl font-bold text-yellow-500 mb-5'>
+            <h2 className='uppercase text-2xl font-bold text-yellow-400 mb-5'>
               The Ethiopian Country
             </h2>
             <p className='mb-6 text-white'>
@@ -45,7 +45,7 @@ export default function Home() {
             </p>
             <StackLink
               href='/about-ethiopia'
-              label='Learn More'
+              label='Discover Ethiopia'
               foregroundColor='bg-green-700'
               backgroundColor='bg-red-600'
             />
