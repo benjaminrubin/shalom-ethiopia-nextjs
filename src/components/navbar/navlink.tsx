@@ -8,9 +8,11 @@ type PropTypes = {
 
 const NavLink = ({ href, label }: PropTypes) => {
   return (
-    <div className='uppercase text-white font-bold py-2 px-3'>
-      <Link href={href}>{label}</Link>
-    </div>
+    <Link href={href}>
+      <div className='uppercase border-b-4 border-transparent hover:border-white duration-200 text-white font-bold py-2 px-3'>
+        {label}
+      </div>
+    </Link>
   );
 };
 

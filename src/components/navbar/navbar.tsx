@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../logo/logo";
 import NavLink from "./navlink";
 import RequestBooking from "./request-booking";
+import MobileMenuIcon from "./mobile-menu-icon";
+import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <div className='container mx-auto pt-6'>
-      <nav className='flex justify-between container mx-4 md:mx-auto'>
+    <div className='fixed px-4 top-0 sm:left-10 sm:right-10 container mx-auto xl:px-64 pt-6 z-50'>
+      <nav className='flex justify-between'>
         <Logo />
         <div className='hidden md:flex justify-around gap-5'>
           <RequestBooking />
           <NavLink href='/our-tours' label='Our Tours' />
           <NavLink href='/about-ethiopia' label='About Ethiopia' />
         </div>
+        <MobileMenuIcon />
       </nav>
     </div>
   );
