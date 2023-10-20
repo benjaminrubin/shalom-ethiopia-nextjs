@@ -9,14 +9,13 @@ const MobileMenuIcon = () => {
   const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
   const nodeRef = useRef(null);
 
-  // Define a function to handle the resize event
-  const handleResize = () => {
-    if (window.innerWidth > 768 && displayMobileMenu) {
-      setDisplayMobileMenu(false);
-    }
-  };
-
   useEffect(() => {
+    // Define a function to handle the resize event
+    const handleResize = () => {
+      if (window.innerWidth > 768 && displayMobileMenu) {
+        setDisplayMobileMenu(false);
+      }
+    };
     window.addEventListener("resize", handleResize);
 
     // Return a cleanup function to remove the event listener

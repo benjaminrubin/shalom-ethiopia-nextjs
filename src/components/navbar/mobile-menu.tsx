@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import NavLink from "./navlink";
 import RequestBooking from "./request-booking";
-import Logo from "../logo/logo";
 import Image from "next/image";
 
 type PropTypes = {
