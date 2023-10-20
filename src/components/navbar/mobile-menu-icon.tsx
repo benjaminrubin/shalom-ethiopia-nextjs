@@ -4,12 +4,25 @@ import React, { useEffect, useRef, useState } from "react";
 import MobileMenu from "./mobile-menu";
 import { CSSTransition } from "react-transition-group";
 import styles from "./mobile-menu-icon.module.css";
+import { usePathname } from "next/navigation";
 
 const MobileMenuIcon = () => {
-  const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
+  const [displayMobileMenu, setDisplayMobileMenu] = useState<boolean>(false);
+  const [previousPath, setPreviousPath] = useState<string | null>(null);
+  const pathname = usePathname();
   const nodeRef = useRef(null);
 
+  const hideMobileMenu = () => setDisplayMobileMenu(false);
+
   useEffect(() => {
+    // If the previous path is set and it's not equal to the pathname
+    if (previousPath && previousPath !== pathname) {
+      // hide the mobilem enu
+      hideMobileMenu();
+    }
+
+    setPreviousPath(pathname);
+
     // Define a function to handle the resize event
     const handleResize = () => {
       if (window.innerWidth > 768 && displayMobileMenu) {
@@ -22,7 +35,7 @@ const MobileMenuIcon = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [displayMobileMenu]); // Dependency array to ensure the effect runs again if isDivVisible changes
+  }, [displayMobileMenu, pathname]); // Dependency array to ensure the effect runs again if isDivVisible changes
 
   return (
     <>
@@ -49,7 +62,7 @@ const MobileMenuIcon = () => {
         unmountOnExit
         mountOnEnter
       >
-        <MobileMenu innerRef={nodeRef} />
+        <MobileMenu hideMobileMenu={hideMobileMenu} innerRef={nodeRef} />
       </CSSTransition>
     </>
   );

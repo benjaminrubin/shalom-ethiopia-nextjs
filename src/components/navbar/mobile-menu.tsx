@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import NavLink from "./navlink";
 import RequestBooking from "./request-booking";
 import Image from "next/image";
+import MobileNavLink from "./mobile-navlink";
 
 type PropTypes = {
   innerRef: React.MutableRefObject<null>;
+  hideMobileMenu: () => void;
 };
 
-const MobileMenu = ({ innerRef }: PropTypes) => {
+const MobileMenu = ({ innerRef, hideMobileMenu }: PropTypes) => {
   return (
     <>
       <div
@@ -22,9 +24,17 @@ const MobileMenu = ({ innerRef }: PropTypes) => {
           height={200}
           priority
         />
-        <NavLink href='/' label='Home' />
-        <NavLink href='/about-ethiopia' label='About Ethiopia' />
-        <NavLink href='/our-tours' label='Our Tours' />
+        <MobileNavLink hideMobileMenu={hideMobileMenu} href='/' label='Home' />
+        <MobileNavLink
+          hideMobileMenu={hideMobileMenu}
+          href='/about-ethiopia'
+          label='About Ethiopia'
+        />
+        <MobileNavLink
+          hideMobileMenu={hideMobileMenu}
+          href='/our-tours'
+          label='Our Tours'
+        />
         <RequestBooking />
       </div>
     </>
