@@ -45,7 +45,7 @@ export default function Home() {
             </p>
             <StackLink
               href='/about-ethiopia'
-              label='Explore Ethiopia'
+              label='Learn More'
               foregroundColor='bg-green-700'
               backgroundColor='bg-red-600'
             />
