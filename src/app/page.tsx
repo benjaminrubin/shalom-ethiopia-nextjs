@@ -1,5 +1,6 @@
 import Ribbon from "@/components/ribbons/ribbon";
 import StackLink from "@/components/stack-link/stack-link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -26,22 +27,36 @@ export default function Home() {
       </main>
       <Ribbon ribbonStyle={"ribbon-v4"} />
       <section className='bg-[#210915] mt-[-2px] mb-[-2px] -z-10'>
-        <div className='container mx-auto px-4 py-10 md:px-12 lg:px-48 xl:px-80 '>
-          <h2 className='uppercase text-2xl font-bold text-yellow-500 mb-5'>
-            The Ethiopian Country
-          </h2>
-          <p className='mb-6 text-white'>
-            {`One of the oldest nations of the world, Ethiopia is an extraordinary country situated in the East of Africa (so-called the “Horn of Africa”). Ethiopia’s history spans across hundreds of years with archaeological findings dating back to more than 3 million years (such as Lucy, the oldest human ancestor ever discovered). Never fully colonized, the country has kept many of its cultural traditions, including its ceremonial ritual for making and drinking coffee (known as “Buna”).`}
-            <br />
-            <br />
-            Click below to learn more about Ethiopia
-          </p>
-          <StackLink
-            href='/about-ethiopia'
-            label='Explore Ethiopia'
-            foregroundColor='bg-green-700'
-            backgroundColor='bg-red-600'
-          />
+        <div className='container grid grid-cols-1 gap-10 md:gap-2 md:grid-cols-2 mx-auto py-10 px-4 md:px-12 lg:px-48 xl:px-80'>
+          <div className=''>
+            <h2 className='uppercase text-2xl font-bold text-yellow-500 mb-5'>
+              The Ethiopian Country
+            </h2>
+            <p className='mb-6 text-white'>
+              {`One of the oldest nations of the world, Ethiopia is an extraordinary country situated in the East of Africa (so-called the “Horn of Africa”). Ethiopia’s history spans across hundreds of years with archaeological findings dating back to more than 3 million years (such as Lucy, the oldest human ancestor ever discovered). Never fully colonized, the country has kept many of its cultural traditions, including its ceremonial ritual for making and drinking coffee (known as “Buna”).`}
+              <br />
+              <br />
+              Click below to learn more about Ethiopia
+            </p>
+            <StackLink
+              href='/about-ethiopia'
+              label='Explore Ethiopia'
+              foregroundColor='bg-green-700'
+              backgroundColor='bg-red-600'
+            />
+          </div>
+          <div className='w-400 md:w-full'>
+            <Image
+              height={1200}
+              width={1200}
+              // fill={true}
+              // style={{ objectFit: "cover" }}
+              src='/images/africa_painting.png'
+              alt='Painting of Africa'
+              priority
+              unoptimized={true}
+            />
+          </div>
         </div>
       </section>
       <Ribbon ribbonStyle='ribbon-v5' />
