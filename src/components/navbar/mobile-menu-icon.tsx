@@ -35,7 +35,7 @@ const MobileMenuIcon = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [displayMobileMenu, pathname]); // Dependency array to ensure the effect runs again if isDivVisible changes
+  }, [displayMobileMenu, pathname, previousPath]); // Dependency array to ensure the effect runs again if isDivVisible changes
 
   return (
     <>

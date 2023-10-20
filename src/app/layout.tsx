@@ -6,6 +6,7 @@ import Header from "@/components/header/header";
 import Head from "next/head";
 import MobileMenu from "@/components/navbar/mobile-menu-icon";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,7 @@ export default function RootLayout({
           </div>
           {children}
           <Footer />
-          <script src='node_modules/flowbite/dist/flowbite.min.js'></script>
+          <Script src='node_modules/flowbite/dist/flowbite.min.js'></Script>
         </body>
       </html>
     </>
