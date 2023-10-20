@@ -1,4 +1,5 @@
 import Header from "@/components/header/header";
+import Ribbon from "@/components/ribbons/ribbon";
 import Image from "next/image";
 import React from "react";
 
@@ -38,6 +39,7 @@ const AboutEthiopiaPage = () => {
           </div>
         </main>
       </div>
+      <Ribbon ribbonStyle='ribbon-v4' />
       <section className=' container mx-auto px-4 py-12 md:px-12 lg:px-48 xl:px-80'>
         <div className='col-span-2'>
           <h2 className='uppercase text-2xl font-bold text-emerald-800 mb-5'>
@@ -56,6 +58,7 @@ const AboutEthiopiaPage = () => {
           </p>
         </div>
       </section>
+      <Ribbon ribbonStyle='ribbon-v5' />
     </>
   );
 };
