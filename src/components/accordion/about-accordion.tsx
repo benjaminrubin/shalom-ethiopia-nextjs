@@ -1,13 +1,12 @@
 "use client";
 
 import { Accordion } from "flowbite-react";
-import AccordionPanel from "./accordion-panel";
 
 export default function AboutAccordion() {
   return (
     <Accordion className='' collapseAll>
       <Accordion.Panel className=''>
-        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-xl border-2 border-emerald-600'>
+        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-lg md:text-xl border-2 border-emerald-600'>
           Types of tours
         </Accordion.Title>
         <Accordion.Content>
@@ -62,7 +61,7 @@ export default function AboutAccordion() {
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel className=''>
-        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-xl border-2 border-emerald-600'>
+        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-lg md:text-xl border-2 border-emerald-600'>
           Arrival
         </Accordion.Title>
         <Accordion.Content>
@@ -80,7 +79,7 @@ export default function AboutAccordion() {
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel className=''>
-        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-xl border-2 border-emerald-600'>
+        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-lg md:text-xl border-2 border-emerald-600'>
           Getting around
         </Accordion.Title>
         <Accordion.Content>
@@ -119,7 +118,7 @@ export default function AboutAccordion() {
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel className=''>
-        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-xl border-2 border-emerald-600'>
+        <Accordion.Title className='py-4 bg-emerald-500 hover:bg-emerald-400 text-black uppercase font-bold text-lg md:text-xl border-2 border-emerald-600'>
           Visa and Pre Arrival
         </Accordion.Title>
         <Accordion.Content>

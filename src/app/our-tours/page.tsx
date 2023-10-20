@@ -77,7 +77,7 @@ const OurToursPage = () => {
               Picture fees in special areas (such as the Omo Valley tribes)
             </li>
           </ul>
-          <p className='mb-6'>
+          <p className='mb-3'>
             *Costs do not include tips for main guides and site guides.
           </p>
           <p className='mb-6'>
