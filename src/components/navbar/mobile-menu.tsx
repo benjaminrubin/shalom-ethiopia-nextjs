@@ -21,6 +21,7 @@ const MobileMenu = ({ innerRef }: PropTypes) => {
           src='/images/temp_logo.png'
           width={200}
           height={200}
+          priority
         />
         <NavLink href='/' label='Home' />
         <NavLink href='/about-ethiopia' label='About Ethiopia' />
