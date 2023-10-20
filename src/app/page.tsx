@@ -1,3 +1,4 @@
+import Header from "@/components/header/header";
 import Ribbon from "@/components/ribbons/ribbon";
 import StackLink from "@/components/stack-link/stack-link";
 import Image from "next/image";
@@ -5,6 +6,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <Header
+        headerText='Discover the Wonders of Ethiopia'
+        headerImageUrl='/images/homepage/hamer_tribe.jpg'
+      />
       <main className='container mx-auto px-4 my-12 md:px-12 lg:px-48 xl:px-80'>
         <h2 className='uppercase text-2xl font-bold text-lime-600 mb-5'>
           About Shalom Ethiopia

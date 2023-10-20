@@ -32,7 +32,6 @@ export default function RootLayout({
         <body className={inter.className}>
           <div className='relative'>
             <NavBar />
-            <Header />
           </div>
           {children}
           <Footer />
