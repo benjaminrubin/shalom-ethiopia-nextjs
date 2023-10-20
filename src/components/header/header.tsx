@@ -18,8 +18,8 @@ type PropTypes = {
 const Header = ({ headerText, headerImageUrl }: PropTypes) => {
   return (
     <div className='relative'>
-      <header className='bg-slate-400 w-full h-80 md:h-[500px] top-0 left-0 right-0 z-[-2] '>
-        <div className='absolute w-100 h-80 md:h-[500px] top-0 left-0 right-0 bg-stone-800 opacity-50 z-20' />
+      <header className='bg-slate-400 w-full h-80 md:h-[500px] xl:h-[750px] top-0 left-0 right-0 z-[-2] '>
+        <div className='absolute w-100 h-80 md:h-[500px] xl:h-[750px] top-0 left-0 right-0 bg-stone-800 opacity-50 z-20' />
         <Image
           src={headerImageUrl}
           alt='Hamer Tribe - Header Image'

@@ -35,6 +35,7 @@ export default function RootLayout({
           </div>
           {children}
           <Footer />
+          <script src='node_modules/flowbite/dist/flowbite.min.js'></script>
         </body>
       </html>
     </>
