@@ -6,6 +6,7 @@ import InfoBlock from "./info-block";
 import EthiopiaTime from "./ethiopia-time";
 import Destinations from "./destinations";
 import OmoValleyTribes from "./omo-valley-tribes";
+import Cuisine from "./cuisine";
 
 const InfoGrid: React.FC = () => {
   return (
@@ -83,6 +84,7 @@ const AboutEthiopiaPage: React.FunctionComponent = () => {
       <Destinations />
       {/* <Ribbon ribbonStyle='ribbon-v5' /> */}
       <OmoValleyTribes />
+      <Cuisine />
     </>
   );
 };
