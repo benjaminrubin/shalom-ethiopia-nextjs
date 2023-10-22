@@ -7,7 +7,7 @@ const NavBackground = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 bg-lime-600 h-[75px] w-100 z-[40] shadow-lg transition duration-600 `}
+      className={`fixed top-0 left-0 right-0 bg-[#479c53] h-[75px] w-100 z-[40] shadow-lg transition duration-600 `}
       style={{ opacity: displayElement ? 1 : 0 }}
     ></div>
   );

@@ -3,10 +3,10 @@ import React from "react";
 import RequestBooking from "../navbar/request-booking";
 import Link from "next/link";
 
-type PropTypes = {
+interface HeaderProps {
   headerImageUrl: string;
   headerText: string;
-};
+}
 
 /**
  * Props that are dynamic:
@@ -15,7 +15,7 @@ type PropTypes = {
  *
  */
 
-const Header = ({ headerText, headerImageUrl }: PropTypes) => {
+const Header: React.FC<HeaderProps> = ({ headerText, headerImageUrl }) => {
   return (
     <div className='relative'>
       <header className='bg-slate-400 w-full h-80 md:h-[500px] xl:h-[750px] top-0 left-0 right-0 z-[-2] '>
