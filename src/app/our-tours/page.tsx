@@ -5,6 +5,10 @@ import StackLink from "@/components/stack-link/stack-link";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Shalom Ethiopia Tours - Our Tours",
+};
+
 const OurToursPage = () => {
   return (
     <>

@@ -4,6 +4,10 @@ import Ribbon from "@/components/ribbons/ribbon";
 import { Fraunces } from "next/font/google";
 const fraunces = Fraunces({ subsets: ["latin"], weight: "400" });
 
+export const metadata = {
+  title: "Shalom Ethiopia Tours - Request Booking",
+};
+
 const RequestBookingPage = () => {
   return (
     <>

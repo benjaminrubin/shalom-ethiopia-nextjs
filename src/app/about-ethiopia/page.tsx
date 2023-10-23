@@ -8,6 +8,10 @@ import Destinations from "./destinations";
 import OmoValleyTribes from "./omo-valley-tribes";
 import Cuisine from "./cuisine";
 
+export const metadata = {
+  title: "Shalom Ethiopia Tours - About Ethiopia",
+};
+
 const InfoGrid: React.FC = () => {
   return (
     <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-6'>
