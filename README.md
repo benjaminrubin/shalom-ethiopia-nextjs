@@ -1,6 +1,10 @@
 # Shalom Ethiopia Website
 
+![Shalom Ethiopia Homepage Banner](https://github.com/benjaminrubin/shalom-ethiopia-nextjs/blob/main/public/images/homepage/hamer_tribe.jpg?raw=true)
+
 This website was created for Andy, a tour operator in Ethiopia.
+
+## Backstory
 
 In June 2018, my mother and aunt treated me to a special three week trip in Ethiopia as a gift for graduating college. Needless to say, the trip was surreal and humbling. Our private guide, Andy, and his driver took us all across the country and organized many intimate encounters with the native people. Andy and I bonded, and in the last week of the trip I asked him about his work. "So tell me... How do you source clients? Do you have a website or any digital presence?"
 
@@ -8,4 +12,8 @@ At the time, he was working in conjunction with other agencies and sharing the p
 
 This website is the end result, which Andy used to market his services and collect booking requests.
 
-- Benjamin Rubin
+## Tech Stack
+This is an entirely front-end website built using NextJS (Typescript) and Tailwind CSS
+
+## Demo Link
+The demo is deployed on Vercel which can be viewed here: [link to demo](https://shalom-ethiopia-nextjs.vercel.app/)
