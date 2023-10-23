@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 
 type FormValues = {
@@ -44,6 +45,9 @@ const FormLabel: React.FC<FormLabelProps> = ({
 };
 
 const RequestBookingForm: React.FC = () => {
+  const [submitLabel, setSubmitLabel] = useState("Submit a Booking Request");
+  const [submitted, setSubmitted] = useState(false);
+
   const {
     handleSubmit,
     control,
@@ -51,7 +55,15 @@ const RequestBookingForm: React.FC = () => {
     watch,
   } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    //   Disable submit button and change label to "Submitting"
+    setSubmitLabel("Submitting...");
+    setTimeout(() => {
+      setSubmitted(true);
+      setSubmitLabel("Submitted!");
+    }, 1000);
+    // After three seconds display "Submitted!"
+  };
   const startDate = watch("startDate", "");
 
   return (
@@ -108,10 +120,10 @@ const RequestBookingForm: React.FC = () => {
           <span className='text-red-500 text-xs'>{errors.email.message}</span>
         )}
       </div>
-      {/* ...other fields... */}
+      {/* Phone Number */}
       <div>
         <FormLabel htmlFor='phoneNumber' helpText='Please include country code'>
-          PhoneNumber
+          Phone / WhatsApp Number
         </FormLabel>
         <Controller
           name='phoneNumber'
@@ -130,19 +142,114 @@ const RequestBookingForm: React.FC = () => {
           </span>
         )}
       </div>
-      <div className='flex space-x-4'>
-        {/* ... Start Date */}
+
+      <div className='grid grid-cols-2 space-x-4'>
+        {/* City / town */}
+        <div>
+          <FormLabel htmlFor='city'>City / Town</FormLabel>
+          <Controller
+            name='city'
+            control={control}
+            render={({ field }) => (
+              <input
+                {...field}
+                type='text'
+                className='w-full p=2 border border-gray-300 rounded-md'
+              />
+            )}
+          />
+        </div>
+        <div>
+          <FormLabel htmlFor='country'>Country</FormLabel>
+          <Controller
+            name='country'
+            control={control}
+            render={({ field }) => (
+              <input
+                {...field}
+                type='text'
+                className='w-full p=2 border border-gray-300 rounded-md'
+              />
+            )}
+          />
+        </div>
+      </div>
+
+      {/* Trip Type */}
+      <div>
+        <FormLabel htmlFor='tripType'>
+          <div>Select the type of trip you would like to book</div>
+          <small className='font-normal'>
+            For a breakdown of the tours, please refer to the{" "}
+            <Link
+              href='/our-tours#types-of-tours'
+              target='_blank'
+              className='text-blue-600 underline'
+            >
+              types of tours
+            </Link>
+          </small>
+        </FormLabel>
+        <Controller
+          name='tripType'
+          control={control}
+          render={({ field }) => (
+            <div className='flex flex-col ml-2'>
+              {["Private", "Family", "Group", "Documentary"].map((type) => (
+                <label key={type} className='inline-flex items-center'>
+                  <input
+                    type='radio'
+                    {...field}
+                    value={type}
+                    checked={field.value === type}
+                    className='text-blue-500'
+                  />
+                  <span className='ml-2'>{type}</span>
+                </label>
+              ))}
+            </div>
+          )}
+        />
+      </div>
+      {/* Group Size */}
+      <div>
+        <FormLabel htmlFor='groupSize' helpText='This can be changed later'>
+          Select the number of people going on the trip
+        </FormLabel>
+        <Controller
+          name='groupSize'
+          control={control}
+          render={({ field }) => (
+            <div className='flex flex-col ml-2'>
+              {[
+                "Single Traveler",
+                "Couple",
+                "3-5 people",
+                "More than 5 people",
+              ].map((type) => (
+                <label key={type} className='inline-flex items-center'>
+                  <input
+                    type='radio'
+                    {...field}
+                    value={type}
+                    checked={field.value === type}
+                    className='text-blue-500'
+                  />
+                  <span className='ml-2'>{type}</span>
+                </label>
+              ))}
+            </div>
+          )}
+        />
+      </div>
+      {/* Trip Dates */}
+      <div className='grid grid-cols-2 space-x-4'>
+        {/* Start Date */}
         <div>
           <FormLabel htmlFor='startDate'>Start Date</FormLabel>
           <Controller
             name='startDate'
             control={control}
-            rules={{
-              validate: (value) =>
-                !value ||
-                new Date(startDate) <= new Date(value) ||
-                "Start date must be after end date",
-            }}
             render={({ field }) => (
               <input
                 {...field}
@@ -183,9 +290,10 @@ const RequestBookingForm: React.FC = () => {
           )}
         </div>
       </div>
+      {/* Additional Information TextArea */}
       <div>
         <FormLabel htmlFor='additionalInfo'>
-          For any additional information, please share below:
+          Share any additional information below:
         </FormLabel>
         <Controller
           name='additionalInfo'
@@ -200,13 +308,22 @@ const RequestBookingForm: React.FC = () => {
           )}
         />
       </div>
-      {/* ...other fields... */}
+      {/* Submit Button */}
       <button
         type='submit'
-        className='px-4 py-2 bg-blue-500 transition duration-200 hover:bg-blue-600 rounded text-white text-xl'
+        disabled={submitted}
+        className={`px-4 py-2 bg-blue-500 transition duration-200 ${
+          submitted ? "" : "hover:bg-blue-600"
+        } rounded text-white text-xl w-full`}
       >
-        Submit Request
+        {submitLabel}
       </button>
+      {submitted && (
+        <div className='text-center mt-5 w-full text-sm'>
+          Your booking request has been submitted! We will reach out to you
+          within the next 48 hours.{" "}
+        </div>
+      )}
     </form>
   );
 };

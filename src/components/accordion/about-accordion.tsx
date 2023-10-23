@@ -7,7 +7,7 @@ export default function AboutAccordion() {
     <Accordion className='' collapseAll>
       <Accordion.Panel className=''>
         <Accordion.Title className='py-4 bg-emerald-400 hover:bg-emerald-300 text-black uppercase font-bold text-lg md:text-xl border-2 border-emerald-600'>
-          Types of tours
+          <span id='types-of-tours'>Types of tours</span>
         </Accordion.Title>
         <Accordion.Content>
           <div className='my-5'>

@@ -4,7 +4,7 @@ import RequestBookingForm from "./request-booking-form";
 const RequestBookingPage = () => {
   return (
     <div>
-      <main className='container mx-auto mt-20 md:mt-32 px-4 md:px-12 lg:px-48 xl:px-80'>
+      <main className='container mx-auto mt-28 md:mt-32 px-4 md:px-12 lg:px-48 xl:px-80'>
         <h1 className='text-4xl text-slate-700 text-center font-bold md:text-6xl mb-10'>
           Request Booking
         </h1>
