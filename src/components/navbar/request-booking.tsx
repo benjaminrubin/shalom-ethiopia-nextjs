@@ -2,10 +2,13 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import useDisplayOnScroll from "../hooks/useDisplayOnScroll";
+import { usePathname } from "next/navigation";
 
 const RequestBooking = () => {
   const [displayElement] = useDisplayOnScroll(240);
   const [isInMobileView, setIsInMobileView] = useState(false);
+  const pathname = usePathname();
+  const onBookingRequestPage = pathname === "/request-booking";
 
   // Define a function to handle the resize event
   const handleResize = () => {
@@ -26,7 +29,8 @@ const RequestBooking = () => {
     };
   }, []);
 
-  const displayBookingRequestButton = isInMobileView || displayElement;
+  const displayBookingRequestButton =
+    isInMobileView || (displayElement && !onBookingRequestPage);
 
   return (
     <Link href='/request-booking'>
