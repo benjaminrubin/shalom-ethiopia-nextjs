@@ -1,4 +1,5 @@
 # Shalom Ethiopia Website
+<img src='https://github.com/benjaminrubin/shalom-ethiopia-nextjs/blob/main/public/images/homepage/hamer_tribe.jpg?raw=true'/>
 
 This website was created for Andy, a tour operator in Ethiopia.
 
