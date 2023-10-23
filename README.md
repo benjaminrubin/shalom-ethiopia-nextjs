@@ -1,5 +1,6 @@
 # Shalom Ethiopia Website
-<img src='https://github.com/benjaminrubin/shalom-ethiopia-nextjs/blob/main/public/images/homepage/hamer_tribe.jpg?raw=true'/>
+
+![Shalom Ethiopia Homepage Banner](https://github.com/benjaminrubin/shalom-ethiopia-nextjs/blob/main/public/images/homepage/hamer_tribe.jpg?raw=true)
 
 This website was created for Andy, a tour operator in Ethiopia.
 
@@ -15,4 +16,4 @@ This website is the end result, which Andy used to market his services and colle
 This is an entirely front-end website built using NextJS (Typescript) and Tailwind CSS
 
 ## Demo Link
-The demo is deployed on Vercel which can be viewed here: <a href='https://shalom-ethiopia-nextjs.vercel.app/' target='_blank'>link to demo</a>
+The demo is deployed on Vercel which can be viewed here: [link to demo](https://shalom-ethiopia-nextjs.vercel.app/)
