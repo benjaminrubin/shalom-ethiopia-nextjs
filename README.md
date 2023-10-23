@@ -11,4 +11,7 @@ At the time, he was working in conjunction with other agencies and sharing the p
 This website is the end result, which Andy used to market his services and collect booking requests.
 
 ## Stack
-This was built using NextJS (Typescript) and Tailwind CSS. The demo is deployed on Vercel which can be viewed here: https://shalom-ethiopia-nextjs.vercel.app/
+This was built using NextJS (Typescript) and Tailwind CSS
+
+## Demo Link
+The demo is deployed on Vercel which can be viewed here: https://shalom-ethiopia-nextjs.vercel.app/
