@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ headerText, headerImageUrl }) => {
         </h1>
         <Link href='/request-booking'>
           <div
-            className={` uppercase w-max mx-auto mt-8 md:mt-10 text-amber-400 hover:text-slate-900 hover:bg-amber-400 cursor-pointer transition duration-200 text-xs md:text-2xl font-bold py-2 px-3 border-4 border-amber-400 h-max opacity`}
+            className={` uppercase w-max mx-auto mt-8 md:mt-10 text-amber-400 hover:text-slate-900 hover:bg-amber-400 cursor-pointer transition duration-200 text-lg md:text-2xl font-bold py-2 px-3 border-4 border-amber-400 h-max opacity`}
           >
             Request Booking
           </div>
