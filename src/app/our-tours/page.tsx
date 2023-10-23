@@ -41,7 +41,7 @@ const OurToursPage = () => {
                 alt='Painting of Africa'
                 priority
                 unoptimized={true}
-                className='rounded-full shadow shadow-2xl max-[300px]'
+                className='rounded-full shadow-2xl max-[300px]'
               />
             </div>
           </div>

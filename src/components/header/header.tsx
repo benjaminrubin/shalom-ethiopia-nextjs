@@ -31,11 +31,13 @@ const Header: React.FC<HeaderProps> = ({ headerText, headerImageUrl }) => {
       </header>
       <div className='z-30 top-[40%] md:top-[50%] left-[50%] translate-x-[-50%] text-white text-center  absolute w-full h-full font-bold'>
         <h1 className='text-3xl md:text-5xl lg:text-6xl'>{headerText}</h1>
-        <div
-          className={`uppercase w-max mx-auto mt-4 md:mt-7 text-amber-400 hover:text-slate-900 hover:bg-amber-400 cursor-pointer transition duration-200 text-xs md:text-2xl font-bold py-2 px-3 border-4 border-amber-400 h-max opacity`}
-        >
-          <Link href='/request-booking'>Request Booking</Link>
-        </div>
+        <Link href='/request-booking'>
+          <div
+            className={`uppercase w-max mx-auto mt-4 md:mt-7 text-amber-400 hover:text-slate-900 hover:bg-amber-400 cursor-pointer transition duration-200 text-xs md:text-2xl font-bold py-2 px-3 border-4 border-amber-400 h-max opacity`}
+          >
+            Request Booking
+          </div>
+        </Link>
       </div>
     </div>
   );

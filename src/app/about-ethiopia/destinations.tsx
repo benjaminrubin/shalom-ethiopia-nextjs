@@ -2,12 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-interface DestinationProps {
-  id: number;
-  location: string;
-  description: string;
-}
-
 const destinations = [
   {
     id: 1,
@@ -66,6 +60,12 @@ const destinations = [
   },
 ];
 
+interface DestinationProps {
+  id: number;
+  location: string;
+  description: string;
+}
+
 const Destination: React.FC<DestinationProps> = ({
   id,
   location,
@@ -106,6 +106,8 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({ mapHeight, mapWidth }) => {
+  console.log("height of map is", mapHeight);
+
   return (
     <div className='mx-auto'>
       <iframe

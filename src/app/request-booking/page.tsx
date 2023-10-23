@@ -1,7 +1,24 @@
 import React from "react";
+import RequestBookingForm from "./request-booking-form";
 
 const RequestBookingPage = () => {
-  return <div>RequestBookingPage</div>;
+  return (
+    <div>
+      <main className='container mx-auto mt-20 md:mt-32 px-4 md:px-12 lg:px-48 xl:px-80'>
+        <h1 className='text-4xl text-slate-700 text-center font-bold md:text-6xl mb-10'>
+          Request Booking
+        </h1>
+        <p>
+          Thank you for your interest in touring with Shalom Ethiopia! Please
+          fill out the form below, and we will be in touch with you as soon as
+          possible to set up your next adventure.
+        </p>
+      </main>
+      <div className='container mx-auto py-6 md:px-12 lg:px-48 xl:px-80'>
+        <RequestBookingForm />
+      </div>
+    </div>
+  );
 };
 
 export default RequestBookingPage;

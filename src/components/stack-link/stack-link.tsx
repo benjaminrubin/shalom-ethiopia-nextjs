@@ -15,8 +15,15 @@ const StackLink = ({
   foregroundColor,
   backgroundColor,
 }: Props) => {
+  const discoverEthiopiaClasses =
+    "w-full flex items-left justify-center md:justify-start";
+  const otherClasses = "w-full flex items-center justify-center";
+
+  const linkClass =
+    label === "Discover Ethiopia" ? discoverEthiopiaClasses : otherClasses;
+
   return (
-    <div className='w-full flex items-center justify-center'>
+    <div className={linkClass}>
       <Link href={href}>
         <div className='w-max relative'>
           <div

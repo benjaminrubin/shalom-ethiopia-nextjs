@@ -57,7 +57,7 @@ const OmoValleyTribes: React.FC = () => {
     <section className='bg-[#F9D25C]'>
       <div className='container mx-auto px-4 py-12 md:px-12 lg:px-48 xl:px-80 '>
         <h2 className='uppercase text-2xl font-bold text-black mb-5'>
-          Destinations
+          Omo Valley Tribes
         </h2>
         <p className='text-slate-800 mb-2'>
           The lower Omo Valley is quite different from any other region in
