@@ -14,4 +14,4 @@ This website is the end result, which Andy used to market his services and colle
 This is an entirely front-end website built using NextJS (Typescript) and Tailwind CSS
 
 ## Demo Link
-The demo is deployed on Vercel which can be viewed here: https://shalom-ethiopia-nextjs.vercel.app/
+The demo is deployed on Vercel which can be viewed here: <a href='https://shalom-ethiopia-nextjs.vercel.app/' target='_blank'>link to demo</a>
