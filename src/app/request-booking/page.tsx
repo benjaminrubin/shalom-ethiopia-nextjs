@@ -1,13 +1,17 @@
 import React from "react";
 import RequestBookingForm from "./request-booking-form";
 import Ribbon from "@/components/ribbons/ribbon";
+import { Fraunces } from "next/font/google";
+const fraunces = Fraunces({ subsets: ["latin"], weight: "400" });
 
 const RequestBookingPage = () => {
   return (
     <>
       <div>
         <main className='container mx-auto mt-28 md:mt-32 px-4 md:px-12 lg:px-48 xl:px-80'>
-          <h1 className='text-4xl text-slate-700 text-center font-bold md:text-6xl mb-10'>
+          <h1
+            className={`${fraunces.className} text-4xl text-slate-700 text-center font-bold md:text-6xl mb-10`}
+          >
             Request Booking
           </h1>
           <p>
