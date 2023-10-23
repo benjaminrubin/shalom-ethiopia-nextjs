@@ -25,7 +25,7 @@ const InfoGrid: React.FC = () => {
 const GeneralInformation: React.FC = () => {
   return (
     <div className='bg-[#479c53]'>
-      <main className=' container mx-auto px-4 py-12 md:px-12 lg:px-48 xl:px-80'>
+      <main className='container mx-auto px-4 py-12 md:px-12 lg:px-48 xl:px-80'>
         <h2 className='uppercase text-2xl font-bold text-white mb-5'>
           General Information
         </h2>
@@ -80,11 +80,13 @@ const AboutEthiopiaPage: React.FunctionComponent = () => {
         headerImageUrl='/images/about-ethiopia/savana.jpg'
       />
       <GeneralInformation />
-      <Ribbon ribbonStyle='ribbon-v4' />
+      <Ribbon ribbonStyle='ribbon-v6' />
       <Destinations />
-      {/* <Ribbon ribbonStyle='ribbon-v5' /> */}
+      <Ribbon ribbonStyle='ribbon-v7' />
       <OmoValleyTribes />
+      <Ribbon ribbonStyle='ribbon-v8' />
       <Cuisine />
+      <Ribbon ribbonStyle='ribbon-v5' />
     </>
   );
 };

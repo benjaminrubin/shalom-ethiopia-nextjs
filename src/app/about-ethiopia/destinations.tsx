@@ -106,8 +106,6 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({ mapHeight, mapWidth }) => {
-  console.log("height of map is", mapHeight);
-
   return (
     <div className='mx-auto'>
       <iframe

@@ -32,6 +32,18 @@
   background-color: #db9e0e;
 }
 
+.ribbon-v6 {
+  background-image: url(/images/patterns/ribbon_v6.png);
+}
+
+.ribbon-v7 {
+  background-image: url(/images/patterns/ribbon_v7.png);
+}
+
+.ribbon-v8 {
+  background-image: url(/images/patterns/ribbon_v8.png);
+}
+
 @media (min-width: 600px) {
 }
 
