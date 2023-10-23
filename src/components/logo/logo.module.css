@@ -1,8 +1,8 @@
 .logo {
   position: relative;
   background-image: url("/images/temp_logo.png");
-  height: 68px;
-  width: 68px;
+  height: 100px;
+  width: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
