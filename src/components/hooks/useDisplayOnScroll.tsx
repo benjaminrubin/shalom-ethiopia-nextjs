@@ -8,11 +8,8 @@ const useDisplayOnScroll = (displayPoint: number): boolean[] => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
       if (scrolled > displayPoint) {
-        // Change 100 to any number of pixels you want
-        // setOpacity("100");
         setDisplayElement(true);
       } else {
-        //   setOpacity("0");
         setDisplayElement(false);
       }
     };
