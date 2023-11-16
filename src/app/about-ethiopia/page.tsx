@@ -81,7 +81,7 @@ const AboutEthiopiaPage: React.FunctionComponent = () => {
     <>
       <Header
         headerText='About Ethiopia'
-        headerImageUrl='/images/about-ethiopia/savana.jpg'
+        headerImageUrl='/images/about-ethiopia/savana.webp'
       />
       <GeneralInformation />
       <Ribbon ribbonStyle='ribbon-v6' />

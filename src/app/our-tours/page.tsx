@@ -14,7 +14,7 @@ const OurToursPage = () => {
     <>
       <Header
         headerText='Our Tours'
-        headerImageUrl='/images/our-tours/offroad-jeep.jpg'
+        headerImageUrl='/images/our-tours/offroad-jeep.webp'
       />
       <div className=''>
         <main className='container mx-auto px-4 py-12 md:px-12 lg:px-48 xl:px-80'>

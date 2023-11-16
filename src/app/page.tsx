@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header
         headerText='Discover the Wonders of Ethiopia'
-        headerImageUrl='/images/homepage/hamer_tribe.jpg'
+        headerImageUrl='/images/homepage/hamer_tribe.webp'
       />
       <main className='container mx-auto px-4 my-12 md:px-12 lg:px-48 xl:px-80'>
         <h2 className='uppercase text-2xl font-bold text-lime-600 mb-5'>
