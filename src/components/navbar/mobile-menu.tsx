@@ -19,7 +19,7 @@ const MobileMenu = ({ innerRef, hideMobileMenu }: PropTypes) => {
       >
         <Image
           alt='Shalom Ethiopia Logo'
-          src='/images/temp_logo.png'
+          src='/images/shalom_ethiopia_logo.webp'
           width={200}
           height={200}
           priority
