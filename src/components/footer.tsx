@@ -22,7 +22,10 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center text-sm'>
-        © Shalom Ethiopia | Designed by Benjamin Floyd Rubin
+        © Shalom Ethiopia | Designed by
+        <a href="https://www.webgemsmedia.com" target="_blank" rel="noopener noreferrer">
+          Web Gems
+          </a>
       </div>
     </div>
   );
