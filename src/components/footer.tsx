@@ -23,8 +23,8 @@ const Footer = () => {
       </div>
       <div className='text-center text-sm'>
         © Shalom Ethiopia | Designed by
-        <a href="https://www.webgemsmedia.com" target="_blank" rel="noopener noreferrer">
-          Web Gems
+        <a href="https://www.webgemsmedia.com" target="_blank" rel="noopener noreferrer" className="underling font-bold">
+          {' '}Web Gems Marketing Agency
           </a>
       </div>
     </div>
